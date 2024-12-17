@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Transcript</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-button">← Back to Tickets</a>
+        <h1 id="ticket-header">Ticket #<span id="ticket-number"></span></h1>
+        <div class="creator-info">
+            <img id="creator-avatar" class="creator-avatar" onerror="this.src='/static/default_avatar.png'" alt="Creator Avatar">
+            <div class="creator-details">
+                <span id="creator-name"></span>
+                <span id="created-at"></span>
+            </div>
+        </div>
+        <div id="transcript-container">Loading transcripts...</div>
+    </div>
+</body>
+</html>
